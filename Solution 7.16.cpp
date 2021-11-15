@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
-int count;
+int count=10;
 double values[count];
 pthread_mutex_t m = PTHREAD_MUTEX_INITIALIZER;
 
@@ -24,4 +24,16 @@ int is_empty()
   int result = count == 0;
   pthread_mutex_unlock(&m);
   return result;
+}
+
+int main()
+{
+  push(10);
+  push(20);
+  push(30);
+  push(40);
+  push(50);
+  pop();
+  pop();
+  cout<<is_empty();
 }
