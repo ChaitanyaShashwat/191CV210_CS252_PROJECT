@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <pthread.h>
+#include <iostream.h>
+#include <stdlib.h>
 
 int count=10;
 double values[count];
@@ -32,6 +34,7 @@ int is_empty()
 
 int main()
 {
+  count=0;
   push(10);
   push(20);
   push(30);
