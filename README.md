@@ -1,6 +1,6 @@
 # 191CV210_CS252_PROJECT
 
-Details/Documentation for individual project constituting of the 
+Details/Documentation for individual project constituting the 
 following problem statements from the 10th edition of Silberschatz book - 
 
 *  4.23 - 
