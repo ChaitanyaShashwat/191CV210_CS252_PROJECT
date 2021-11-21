@@ -35,7 +35,7 @@ void *printprime(void *ptr, int N)
             //if prime, it'll store 1(true) at index 
         }
         i += MAX_THREADS;
-        //so that threads work one after the other or simply to reduce redundancy
+        //so that threads don't work on the same memory space at the same time
     }
 }
 
