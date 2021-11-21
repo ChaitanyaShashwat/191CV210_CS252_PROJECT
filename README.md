@@ -22,4 +22,6 @@ fix the race condition.
 
 Reference/Credits for solution - https://cs241.cs.illinois.edu/coursebook/Synchronization
 
-Brief - A double datatype stack implementation is used here to solve the problem. Push and Pop functions are defined such that when one thread is running the pop function, the other is locked for a snippet of the scope of function in order to eliminate the race condition. This is done using Mutex Locks. Lastly, the main function simply demonstrates how the stack will work.(Not written a multithreaded solution for the for the problem but this implementation of a stack will work and eliminate the race condition in a concurrent environment)
+Brief - A double datatype stack implementation is used here to solve the problem. Push and Pop functions are defined such that when one thread is running the pop function, the other is locked for a snippet of the scope of function in order to eliminate the race condition. This is done using Mutex Locks. Lastly, the main function simply demonstrates how the stack will work.
+
+Note - Not written a multithreaded solution for the for the problem but this implementation of a stack will work and eliminate the race condition in a concurrent environment.
